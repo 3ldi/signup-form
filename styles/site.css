@@ -1,0 +1,205 @@
+/*--Rules for the header--*/
+
+header h1 {
+    width: 100%;
+    color: white;
+    background-color: black;
+    border-radius: 20px 20px 0px 0px;
+    padding: 10px 0;
+    text-align: center;
+    text-shadow: 1px solid black;
+}
+
+/*--Rules for the body--*/
+
+body {
+    background-image: url(../images/bgimg.jpg);
+    background-attachment: fixed;
+    background-size:cover;
+    background-repeat:no-repeat;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    width: 96%;
+    margin: auto;
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    width: 60%;
+    margin: auto;
+}
+
+.container {
+    display: flex;
+}
+
+.halfScreen {
+    flex: 1;
+    margin: auto 5%;
+}
+
+#smLogin {
+    margin: auto 5%;
+}
+
+#smLogin h3 {
+    font-size: 1.5em;
+}
+
+#smLogin p {
+    font-size: 1.25em;
+    text-align: justify;
+    text-shadow: 1px solid white;
+}
+
+.halfScreen h3 {
+    margin-top: 0px;
+    text-align: center;
+}
+form legend {
+    font-weight: bolder;
+    font-size: 1.3em;
+}
+form label,
+#exp-date-label {
+    display: block;
+    margin-top: 10px;
+    font-size: 1em;
+    font-weight: normal;
+}
+
+form input {
+    display: block;
+    line-height: 2.2em;
+    border-radius: 5px;
+    width: 300px;
+}
+input#password{
+    width: 230px;
+}
+
+form input#addCard{
+    width: auto;
+}
+
+form input#addCard,
+form label[for="addCard"] {
+    display: inline-block;
+}
+
+/* Styles for input/error hints */
+.hint {
+    display: none;
+    color: red;
+    font-size: small;
+}
+
+/* Styles for password hints and show/hide button*/
+
+#passHint,
+#passReq {
+    font-size: 80%;
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+#show-hide-pass,
+input#password {
+    display: inline-block;
+}
+
+#show-hide-pass {
+    height: 2.2em;
+    width: 50px;
+}
+/*Styles for the location fields */
+#zip,
+#state {
+    width: 60px;
+}
+
+#city {
+    width: 120px;
+}
+.location {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 2%;
+}
+
+.location-zip,
+.location-state {
+    flex: 1;
+}
+
+.location-city {
+    flex: 2;
+}
+/* Styles for the credit card fields */
+
+div.creditCardInfo {
+    display: none;
+}
+
+#cardNumber {
+    width: 180px;
+}
+
+#securityCode {
+    width: 90px;
+}
+.cc-container {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 2%;
+}
+.numberContainer {
+    flex-basis: 60%;
+}
+.securityCodeContainer {
+    flex-basis: 20%;
+}
+
+
+/* Focus styles */
+input:focus {
+    outline: none;
+    background-color: rgba(255, 255, 0, 0.4); 
+}
+
+/* Styles for valid inputs */
+
+.success {
+    border-bottom: 2px solid green;
+    background-color: white;
+}
+.failed {
+    border-bottom: 2px solid red;
+    background-color: white;
+}
+
+
+/* Styles for buttons */
+
+button#submitBtn {
+    width: 100%;
+    font-size: 1.2em;
+    padding-top:0.25em;
+    padding-bottom: 0.25em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    text-shadow: 1px solid white;
+}
+
+button#submitBtn:hover {
+    background-color: rgba(0, 0, 0, 0.673);
+}
+
+
+
+
