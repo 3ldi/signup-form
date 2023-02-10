@@ -8,7 +8,7 @@ window.addEventListener("load", function () {
     getPhoneNumber();
     getAddress();
     addCreditCard();
-    formSubmit();
+    bindForm();
 
 }); // end window onload
 
@@ -116,7 +116,7 @@ function getAddress() {
     // add listner and handler for zip code
     zipCode.addEventListener("change", function () {
         var params = {
-            myKey: "AryOTRwEH8aUjyik7eSaC2eyDJFzdUzXWk3tqKsdboxw5C_YlhTVmtN64TlgT6DB",
+            myKey: "", // <--- Enter your own key here to test, I used Bing maps
             query: this.value
         }
         // make and send XmlHttpRequest
@@ -407,7 +407,7 @@ function getPassword() {
     Function to prevent form submission if required fields are not valid/missing
 */
 
-function formSubmit() {
+function bindForm() {
     const form = document.getElementById("myForm");
     const allValid = document.getElementsByClassName("success");
     console.log(allValid.length)
